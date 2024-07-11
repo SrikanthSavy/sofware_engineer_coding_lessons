@@ -13,9 +13,9 @@ class Node {
 function printlist(head) {
     let curr=head;
     let string = " ";
-    while(curr!==null){
+    while(curr!==null){ // Base case : Last Node will be null
         string += curr.value + " ";
-        curr=curr.next;
+        curr=curr.next;  // Moving current = next node
     }
     return string;
 }
