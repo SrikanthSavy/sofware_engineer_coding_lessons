@@ -16,9 +16,7 @@ function countOfOccurance(array,x)   // TIme Complexity = O(logn+logn+1) = O(2lo
     if(firstIndex===-1)
         return -1
     let lastIndex = lastOccuranceIndex(array,x)
-    console.log(`lastIndex:${lastIndex}`)
-    if(lastIndex===-1)
-        return -1
+    console.log(`lastIndex:${lastIndex}`)  
 
     return (lastIndex-firstIndex)+1
 }
