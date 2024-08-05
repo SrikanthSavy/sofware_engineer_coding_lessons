@@ -16,7 +16,7 @@ Solution : Use Bitwise (XOR) i.e ^
     4) n ^ n = 0            i.e. 4 ^ 4 = 0
 
   Based on the above properties, we can treat our problem as 
-    if an number is odd say "4" occus odd time
+    if an number is odd say "4" occurs odd time
     then 4^4^4 => 0^4 = 4
     therefore we can divide our problem (beased on assumption)
     eg1: a=[4,3,4,4,4,5,5] = 4^4^4^4 ^ 5^5 ^ 3
