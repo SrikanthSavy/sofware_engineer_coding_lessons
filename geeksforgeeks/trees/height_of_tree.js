@@ -9,7 +9,7 @@
 /*
     Implementation :
     Follow the below steps to Implement the idea:
-        -> Recursively do a Depth-first search.
+        -> Recursively do a Depth-first search. (DFS)
         -> If the tree is empty then return -1
         Otherwise, do the following
         -> Get the max depth of the left subtree recursively  i.e. call maxDepth( tree->left-subtree)
@@ -32,9 +32,9 @@ class Node{
 function heightofnode(root)
 {
     if(root===null)
-        return -1     
+        return 0     
     
-    let leftheight =  heightofnode(root.left)
+    let leftheight = heightofnode(root.left)
     let rightHeight= heightofnode(root.right)
     let height =  (1+ Math.max(leftheight,rightHeight))
     return height
@@ -48,6 +48,6 @@ root.right= new Node(30)
 root.right.left = new Node(40)
 root.right.right= new Node(50)
 
-console.log(Math.max(-1,-1))
+//console.log(Math.max(-1,-1))
 console.log(` Hieght of root(10) : ${heightofnode(root)}`)
 
