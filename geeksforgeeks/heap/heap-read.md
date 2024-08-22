@@ -15,7 +15,7 @@ Then we compare it with its parent. If it's smaller, we swap them.
 We keep doing this until it's in the right place.
 
 
-When we want to remove the biggest number (extractMax):
+When we want to remove the smallest number (extractMin):
 ========================================================
 We take the first number (the root) as it's the smallest.
 We move the last number to the top.
@@ -28,12 +28,12 @@ These processes of moving numbers up or down are called "heapify up" and "heapif
 The main operations are:
 
 1) insert(value):       Adds a new value to the heap.
-2) extractMax():        Removes and returns the largest value from the heap.
-3) heapifyUp(index):    Moves an element up to its correct position.
-4) heapifyDown(index):  Moves an element down to its correct position.
+2) extractMin():        Removes and returns the Min value from the heap.
+3) heapifyUp(index):    Moves an element up to its correct position.  ( while Insert() calls)
+4) heapifyDown(index):  Moves an element down to its correct position.( while delete/extraxt() call)
 
-This implementation ensures that the largest element is always at the root (index 0), and that every parent is Smaller than its children. 
-The time complexity for insert and extractMax operations is O(log n), where n is the number of elements in the heap.
+This implementation ensures that the Min element is always at the root (index 0), and that every parent is Smaller than its children. 
+The time complexity for insert and extractMin operations is O(log n), where n is the number of elements in the heap.
 
 Method Need to write MinHeap
 ===========================
