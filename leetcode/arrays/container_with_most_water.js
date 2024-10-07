@@ -7,8 +7,8 @@
 
         Constraints:
                     n == height.length
-                    2 <= n <= 105
-                    0 <= height[i] <= 104
+                    2 <= n <= 10^5
+                    0 <= height[i] <= 10^4
 
         Example :   Input: height = [1,8,6,2,5,4,8,3,7]
                     Output: 49
