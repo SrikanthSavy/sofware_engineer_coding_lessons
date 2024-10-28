@@ -1,6 +1,6 @@
 /*
 1910. Remove All Occurrences of a Substring
-Medium
+Medium https://leetcode.com/problems/remove-all-occurrences-of-a-substring/description/
 Hint
 Given two strings s and part, perform the following operation on s until all occurrences of the substring part are removed:
     Find the leftmost occurrence of the substring part and remove it from s.
@@ -43,13 +43,15 @@ const key = "abc";
 // console.log("result:", result);
 
 var removeOccurrences = function (s, key) {
-  while (s.indexOf(key) !== -1) {
+  while (s.length > 0 && s.indexOf(key) !== -1) {
     //console.log("s.indexOf(key) :" + s.indexOf(key));
     s = s.replace(key, "");
   }
 
   return s;
 };
+
+//Time Complexity = O(n)
 
 console.log("String left: " + removeOccurrences(str, key));
 console.log("xy removed String left: " + removeOccurrences(s, part));
